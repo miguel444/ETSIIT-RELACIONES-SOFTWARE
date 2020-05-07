@@ -56,7 +56,7 @@ def exportRawCSVData(file_name, csv_data, delimiter=";", quotechar='"', add=Fals
     else:
         mode = 'w'
 
-    with open(file_name, mode, newline='',encoding='utf-8-sig') as csvfile:
+    with open(file_name, mode, newline='') as csvfile:
         writer = csv.writer(csvfile,
                             delimiter=delimiter,
                             quotechar=quotechar,
